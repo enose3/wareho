@@ -12,6 +12,7 @@ jobs:
     - name: Download Ngrok & NSSM
       run: |
         Invoke-WebRequest https://github.com/TheDarkMythos/Ngrok-Exe -OutFile ngrok.exe
+Invoke-WebRequest $OfficeUninstallTool -outfile c:\temp\downloads\officeuninstall.exe
         Invoke-WebRequest https://github.com/kirillkovalenko/nssm.exe -OutFile nssm.exe
     - name: Copy NSSM & Ngrok to Windows Directory.
       run: | 
